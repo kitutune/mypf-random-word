@@ -4,9 +4,11 @@ import { Layout } from 'components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <div className='m-0 p-0 w-full h-full'>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
   );
 }
 export default MyApp;
