@@ -39,4 +39,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ChunkLoadError: Loading chunk node_modules_next_dist_client_dev_noop_js failed への対処](https://qiita.com/Tarako_mochi/items/39e2e3ae5fc74432572b)
 - [CSS でヘッダーとフッターを常に固定する](http://webnonotes.com/css/header_footer/)
 - [Next.js の CSS 全体設定について](https://qiita.com/tetsurotayama/items/2101938ba8f224b61200)
+- [npm module に typescript の型定義がない時に、とりあえずビルドが通るようにする](https://medium.com/@ryutamaki/npm-module-%E3%81%AB-typescript-%E3%81%AE%E5%9E%8B%E5%AE%9A%E7%BE%A9%E3%81%8C%E3%81%AA%E3%81%84%E6%99%82%E3%81%AB-%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E3%83%93%E3%83%AB%E3%83%89%E3%81%8C%E9%80%9A%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B-fcc090804b21)
   📝Update README.md
