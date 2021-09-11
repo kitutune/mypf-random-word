@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       amu
       <Test />
       <Login />
+      last
     </main>
   );
 };
