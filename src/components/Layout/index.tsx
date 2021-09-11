@@ -9,12 +9,11 @@ export const Layout: React.FC<Props> = (props) => {
   return (
     <div>
       <Background />
-      <div>
-        <Header />
-
-        <div>{props.children}</div>
-        <Footer />
+      <Header />
+      <div className='text-center'>
+        <div className='pt-40 pb-40 w-4/5 m-auto'>{props.children}</div>
       </div>
+      <Footer />
     </div>
   );
 };
