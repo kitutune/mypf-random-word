@@ -37,3 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [next/image の背景の設定の仕方](https://image-component.nextjs.gallery/background)
 - [ChunkLoadError: Loading chunk node_modules_next_dist_client_dev_noop_js failed への対処](https://qiita.com/Tarako_mochi/items/39e2e3ae5fc74432572b)
+- [CSS でヘッダーとフッターを常に固定する](http://webnonotes.com/css/header_footer/)
+- [Next.js の CSS 全体設定について](https://qiita.com/tetsurotayama/items/2101938ba8f224b61200)
+  📝Update README.md
