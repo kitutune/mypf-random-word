@@ -32,3 +32,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+参考リンク
+
+- [next/image の背景の設定の仕方](https://image-component.nextjs.gallery/background)
+- [ChunkLoadError: Loading chunk node_modules_next_dist_client_dev_noop_js failed への対処](https://qiita.com/Tarako_mochi/items/39e2e3ae5fc74432572b)
