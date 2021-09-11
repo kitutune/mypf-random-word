@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BurgerIcon = () => {
+export const HouseIcon = () => {
   return (
     <svg
       className='w-8 mr-2 fill-current'
