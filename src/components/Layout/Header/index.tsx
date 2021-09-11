@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import { BurgerMenu } from 'components/BurgerMenu';
-import { HouseIcon } from 'components/BurgerMenu/HouseIcon';
+import { BurgerMenu } from 'components/Layout/Header/BurgerMenu';
+import { HouseIcon } from 'components/Layout/Header/HouseIcon';
 export const Header: React.FC = () => {
   return (
     <>
