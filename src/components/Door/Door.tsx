@@ -17,7 +17,11 @@ export const Door: React.FC = (props) => {
   return (
     <div onClick={handleDoor}>
       <h1>上</h1>
-      <input type='checkbox' checked={isShow} className={`${classes.check} ${classes.slide}`} />
+      <input
+        type='checkbox'
+        defaultChecked={isShow}
+        className={`${classes.check} ${classes.slide}`}
+      />
 
       <div className={classes.gatefold}>
         <div className={classes.header}>
