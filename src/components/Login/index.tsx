@@ -16,13 +16,13 @@ export const Login = () => {
     };
   }, []);
 
-  function signInWithGithub() {
+  const signInWithGithub = () => {
     supabase.auth.signIn({ provider: 'github' });
-  }
+  };
 
-  function signOut() {
+  const signOut = () => {
     supabase.auth.signOut();
-  }
+  };
 
   return (
     <>
