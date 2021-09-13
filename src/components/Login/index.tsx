@@ -1,29 +1,6 @@
-import { useEffect, useState } from 'react';
-import { supabase } from 'libs/supabase';
-
+import { useLogin } from 'components/Hooks/useLogin';
 export const Login = () => {
-  const [session, setSession] = useState<object | null>();
-
-  useEffect(() => {
-    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
-      setSession(session);
-    });
-    if (authListener === null) {
-      return;
-    }
-    return () => {
-      authListener.unsubscribe();
-    };
-  }, []);
-
-  const signInWithGithub = () => {
-    supabase.auth.signIn({ provider: 'github' });
-  };
-
-  const signOut = () => {
-    supabase.auth.signOut();
-  };
-
+  const { session, signInWithGithub, signOut } = useLogin();
   return (
     <>
       {session ? (
