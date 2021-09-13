@@ -8,7 +8,6 @@ export const Door: React.FC = (props) => {
   const handleDoor = useCallback(
     (e: React.MouseEvent) => {
       if (session) {
-        console.log('a');
         return;
       }
       signInWithGithub();
@@ -20,6 +19,8 @@ export const Door: React.FC = (props) => {
   useEffect(() => {
     if (session) {
       setIsShow(true);
+    } else {
+      setIsShow(false);
     }
     return () => {};
   }, [session]);
