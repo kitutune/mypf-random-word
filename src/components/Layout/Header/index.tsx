@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { BurgerMenu } from 'components/Layout/Header/BurgerMenu';
 import { HouseIcon } from 'components/Layout/Header/HouseIcon';
+import { Login } from 'components/Login';
 export const Header: React.FC = () => {
   return (
     <>
@@ -30,7 +31,7 @@ export const Header: React.FC = () => {
                   Calendar
                 </a>
                 <a className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'>
-                  Contact us
+                  <Login />
                 </a>
               </div>
             </div>
