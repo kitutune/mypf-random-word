@@ -4,12 +4,12 @@ import { BurgerIcon } from './BurgerIcon';
 export const BurgerMenu: React.FC = () => {
   return (
     <div className='dropdown dropdown-end'>
-      <div tabIndex='0' className=' '>
+      <div tabIndex={0} className=' '>
         <button className='text-white focus:outline-none'>
           <BurgerIcon />
         </button>
       </div>
-      <ul tabIndex='0' className='p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52'>
+      <ul tabIndex={0} className='p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52'>
         <li>
           <a>Item 1</a>
         </li>
