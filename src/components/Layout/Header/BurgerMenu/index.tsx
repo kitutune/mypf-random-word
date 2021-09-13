@@ -1,5 +1,6 @@
 import React from 'react';
 import { BurgerIcon } from './BurgerIcon';
+import { Login } from 'components/Login';
 
 export const BurgerMenu: React.FC = () => {
   return (
@@ -17,7 +18,9 @@ export const BurgerMenu: React.FC = () => {
           <a>Item 2</a>
         </li>
         <li>
-          <a>Item 3</a>
+          <a>
+            <Login />
+          </a>
         </li>
       </ul>
     </div>
