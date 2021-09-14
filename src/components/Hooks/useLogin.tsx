@@ -7,7 +7,7 @@ export const useLogin = () => {
   useEffect(() => {
     const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
       setSession(session);
-      setUserId(session.user.id);
+      session ? setUserId(session.user.id) : null;
     });
     if (authListener === null) {
       return;
