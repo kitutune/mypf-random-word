@@ -3,9 +3,11 @@ import { supabase } from 'libs/supabase';
 
 export const useLogin = () => {
   const [session, setSession] = useState<object | null>();
+  const [userId, setUserId] = useState<string | undefined>();
   useEffect(() => {
     const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
       setSession(session);
+      setUserId(session.user.id);
     });
     if (authListener === null) {
       return;
@@ -22,5 +24,6 @@ export const useLogin = () => {
   const signOut = () => {
     supabase.auth.signOut();
   };
-  return { session, signInWithGithub, signOut };
+
+  return { session, signInWithGithub, signOut, userId };
 };
