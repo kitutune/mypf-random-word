@@ -25,6 +25,10 @@ export const Submission: React.FC = () => {
     const { data, error } = await supabase
       .from('wordbox')
       .insert([{ user_id: userId, word: form.word, url: form.url }]);
+    setForm(({ ...pre }) => ({
+      word: '',
+      url: '',
+    }));
   };
   console.log(form.word);
   console.log(form.url);
