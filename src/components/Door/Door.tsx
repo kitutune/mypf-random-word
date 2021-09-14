@@ -1,9 +1,36 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import classes from 'components/Door/Door.module.css';
 import { useLogin } from 'components/Hooks/useLogin';
+import { supabase } from 'libs/supabase';
+const getuser = async (userId: string) => {
+  try {
+    if (userId === undefined) {
+      return;
+    }
+    const { data: profiles, error } = await supabase.from('profiles').select('*').eq('id', userId);
+
+    if (profiles.length === 0) {
+      registerUser(userId);
+      return console.log(`user${userId}をDBに登録します${profiles.length}`);
+    }
+    if (error) {
+      throw error;
+    }
+    if (profiles) {
+      console.log('userの読み込みに成功しました！');
+    }
+  } catch (error) {
+    console.log(`userの読み込みに失敗しました！error内容は${error}`);
+  }
+};
+
+const registerUser = async (userId) => {
+  const { data, error } = await supabase.from('profiles').insert([{ id: userId }]);
+};
 
 export const Door: React.FC = (props) => {
-  const { session, signInWithGithub, signOut } = useLogin();
+  const { session, signInWithGithub, signOut, userId } = useLogin();
+
   const [isShow, setIsShow] = useState<boolean>(false);
   const handleDoor = useCallback(
     (e: React.MouseEvent) => {
@@ -16,14 +43,16 @@ export const Door: React.FC = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [isShow],
   );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (session) {
       setIsShow(true);
+      getuser(userId);
     } else {
       setIsShow(false);
     }
     return () => {};
-  }, [session]);
+  });
   return (
     <>
       <div onClick={handleDoor}>
