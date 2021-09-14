@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BurgerIcon = () => {
+export const BurgerIcon: React.FC = () => {
   return (
     <svg className='h-12 w-12' viewBox='0 0 24 24' fill='none'>
       <path
