@@ -1,10 +1,13 @@
 import type { NextPage } from 'next';
-import { Login } from 'components/Login';
+import { RandomWord } from 'components/RandomWord';
+
 const Home: NextPage = () => {
   return (
     <main>
       amu
-      <Login />
+      <div>
+        <RandomWord />
+      </div>
       last
     </main>
   );
