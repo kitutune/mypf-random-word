@@ -1,24 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { supabase } from 'libs/supabase';
+import { useWordLists } from 'components/Hooks/useWordLists';
 export const RandomWord: React.FC = () => {
   const [messageNo, setMessageNo] = useState(0);
-  const [words, setWords] = useState([
-    {
-      word: '',
-      id: '',
-      url: '',
-    },
-  ]);
-  const getWords = async () => {
-    const { data: wordbox, error } = await supabase.from('wordbox').select('*');
-    if (wordbox) {
-      setWords(wordbox);
-    }
-  };
+  const { getWords, words } = useWordLists();
   const handleChange = useCallback(() => {
     const a = Math.floor(Math.random() * words.length);
     setMessageNo(a);
-  }, []);
+  }, [words]);
   console.log(words);
 
   useEffect(() => {
