@@ -20,10 +20,6 @@ export const RandomWord: React.FC = () => {
       <div className='text-6xl'>
         <a href={words[messageNo].url}> {words[messageNo].word}</a>
       </div>
-      <h1>→{words[messageNo].word}←</h1>
-      <h1>→{words[messageNo].url}←</h1>
-      <h1>→{words[messageNo].id}←</h1>
-
       <button onClick={handleChange}>push</button>
     </div>
   );
