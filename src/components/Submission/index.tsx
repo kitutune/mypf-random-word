@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useLogin } from 'components/Hooks/useLogin';
 import { supabase } from 'libs/supabase';
 export const Submission: React.FC = () => {
