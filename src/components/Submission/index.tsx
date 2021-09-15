@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useLogin } from 'components/Hooks/useLogin';
 import { supabase } from 'libs/supabase';
 export const Submission: React.FC = () => {
@@ -12,7 +12,6 @@ export const Submission: React.FC = () => {
     word: '',
     url: '',
   });
-
   const handleChange = useCallback(
     (input) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setForm((prevForm) => {
@@ -21,7 +20,13 @@ export const Submission: React.FC = () => {
     },
     [],
   );
-  const submission = async () => {
+  const submission = useCallback(async () => {
+    if (!userId) {
+      return;
+    }
+    if (form.word.length <= 1 || form.url.length <= 5) {
+      return alert('wordは２文字以上、URLも入力してください');
+    }
     const { data, error } = await supabase
       .from('wordbox')
       .insert([{ user_id: userId, word: form.word, url: form.url }]);
@@ -29,9 +34,7 @@ export const Submission: React.FC = () => {
       word: '',
       url: '',
     }));
-  };
-  console.log(form.word);
-  console.log(form.url);
+  }, [userId, form]);
 
   return (
     <div>
