@@ -43,7 +43,7 @@ export const Submission = (props: Props) => {
   }, [submission]);
   return (
     <>
-      <form className='flex flex-wrap gap-3 w-full justify-center p-5 '>
+      <form className='flex flex-wrap gap-3 w-full justify-center p-5 max-w-4xl'>
         <p className='font-bold text-black mb-3'>{`現在登録されているワードは${words.length}個です`}</p>
         {Object.entries(form).map(([value, defaultValue], i) => (
           <label className=' uppercase w-full flex flex-col' key={i}>
