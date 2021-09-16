@@ -1,7 +1,9 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useWordLists } from 'components/Hooks/useWordLists';
 import { supabase } from 'libs/supabase';
 import { Props } from 'pages';
 export const Submission = (props: Props) => {
+  const { getWords, words } = useWordLists();
   const titles = ['word', 'url'];
   const holder = [
     '好きな作品のセリフや一節を入力してください',
@@ -34,9 +36,15 @@ export const Submission = (props: Props) => {
       url: '',
     }));
   }, [props.userId, form]);
+  useEffect(() => {
+    getWords();
+    return () => {};
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
-      <form className='flex flex-wrap gap-3 w-full  p-5 '>
+      <form className='flex flex-wrap gap-3 w-full justify-center p-5 '>
+        <p className='font-bold text-black mb-3'>{`現在登録されているワードは${words.length}個です`}</p>
         {Object.entries(form).map(([value, defaultValue], i) => (
           <label className=' uppercase w-full flex flex-col' key={i}>
             <span className='font-bold text-black mb-3'> {titles[i]}</span>
@@ -54,7 +62,6 @@ export const Submission = (props: Props) => {
           onClick={submission}
           className='peer  pr-2 mt-5 w-full border-2 bg-indigo-600 py-2 rounded-md hover:bg-indigo-500 transition duration-300'
           type='button'
-          // className='w-full mt-6 text-indigo-50 font-bold bg-indigo-600 py-3 rounded-md hover:bg-indigo-500 transition duration-300'
         >
           ENTER
         </button>
