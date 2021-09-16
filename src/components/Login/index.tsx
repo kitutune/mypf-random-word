@@ -4,9 +4,9 @@ export const Login = () => {
   return (
     <>
       {session ? (
-        <button onClick={() => signOut()}>サインアウト</button>
+        <button onClick={() => signOut()}>SIGNOUT</button>
       ) : (
-        <button onClick={() => signInWithGithub()}>GitHubでログイン</button>
+        <button onClick={() => signInWithGithub()}>LOGIN</button>
       )}
     </>
   );
