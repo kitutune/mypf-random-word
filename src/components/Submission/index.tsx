@@ -4,7 +4,7 @@ import { Props } from 'pages';
 export const Submission = (props: Props) => {
   const titles = ['word', 'url'];
   const holder = [
-    'あなたの好きな作品のセリフや一節を入力してください',
+    '好きな作品のセリフや一節を入力してください',
     '入力した作品のリンクを入力してください',
   ];
   const [form, setForm] = useState({
@@ -35,37 +35,30 @@ export const Submission = (props: Props) => {
     }));
   }, [props.userId, form]);
   return (
-    <div>
-      <div className=' flex items-center'>
-        <div className='container mx-auto max-w-md shadow-md hover:shadow-lg transition duration-300'>
-          <div className='py-12 p-10 bg-white rounded-xl'>
-            {Object.entries(form).map(([value, defaultValue], i) => (
-              <div className='mb-6' key={i}>
-                <label
-                  className='mr-4 uppercase text-gray-700 font-bold inline-block mb-2'
-                  htmlFor='name'
-                >
-                  {titles[i]}
-                </label>
-                <input
-                  type='text'
-                  className='border text-xs text-black bg-gray-100 py-2 px-4 w-3/4 outline-none focus:ring-2 focus:ring-indigo-400 rounded'
-                  placeholder={holder[i]}
-                  value={defaultValue}
-                  onChange={handleChange(value)}
-                />
-              </div>
-            ))}
+    <>
+      <form className='flex flex-wrap gap-3 w-full  p-5 '>
+        {Object.entries(form).map(([value, defaultValue], i) => (
+          <label className='relative uppercase w-full flex flex-col' key={i}>
+            <span className='font-bold mb-3'> {titles[i]}</span>
+            <input
+              className='rounded-md peer pl-12 pr-2 md:text-base text-2xs text-black py-2 border-2 border-gray-400 placeholder-gray-400'
+              type='text'
+              placeholder={holder[i]}
+              value={defaultValue}
+              onChange={handleChange(value)}
+            />
+          </label>
+        ))}
 
-            <button
-              onClick={submission}
-              className='w-full mt-6 text-indigo-50 font-bold bg-indigo-600 py-3 rounded-md hover:bg-indigo-500 transition duration-300'
-            >
-              ENTER
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+        <button
+          onClick={submission}
+          className='peer  pr-2 mt-5 w-full border-2 bg-indigo-600 py-2 rounded-md hover:bg-indigo-500 transition duration-300'
+          type='button'
+          // className='w-full mt-6 text-indigo-50 font-bold bg-indigo-600 py-3 rounded-md hover:bg-indigo-500 transition duration-300'
+        >
+          ENTER
+        </button>
+      </form>
+    </>
   );
 };
