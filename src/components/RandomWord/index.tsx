@@ -31,7 +31,15 @@ export const RandomWord: React.FC = () => {
           {words[messageNo].word}
         </a>
       </div>
-      <button onClick={handleChange}>push</button>
+
+      <button
+        className='btn btn-wide btn-lg btn-primary btn-active'
+        role='button'
+        aria-pressed='true'
+        onClick={handleChange}
+      >
+        push
+      </button>
     </div>
   );
 };
