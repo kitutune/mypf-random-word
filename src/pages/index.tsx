@@ -14,11 +14,15 @@ const Home: NextPage = () => {
   const { userId } = useLogin();
 
   return (
-    <main>
-      {tab.tab1 ? <RandomWord /> : null}
+    <>
+      {userId ? (
+        <main>
+          {tab.tab1 ? <RandomWord /> : null}
           {tab.tab2 ? <MyWordList userId={userId} /> : null}
           {tab.tab3 ? <Submission userId={userId} /> : null}
-    </main>
+        </main>
+      ) : null}
+    </>
   );
 };
 
