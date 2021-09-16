@@ -14,7 +14,6 @@ export const Door: React.FC = (props) => {
         return;
       }
       signInWithGithub();
-      console.log('クリックした');
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [isShow],

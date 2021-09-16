@@ -4,8 +4,6 @@ import { useTab } from 'components/Hooks/useTab';
 
 export const Background = () => {
   const { tab } = useTab();
-  console.log(tab);
-
   return (
     <div className={classes.bgWrap}>
       {tab.tab3 ? (
