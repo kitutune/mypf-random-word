@@ -23,12 +23,13 @@ export const RandomWord: React.FC = () => {
   if ((words[0].word = '')) {
     return <div>NoWORD!!</div>;
   }
-
   return (
     <div className='text-6xl'>
       <h1> ランダムワード</h1>
       <div className='text-6xl'>
-        <a href={words[messageNo].url}> {words[messageNo].word}</a>
+        <a href={words[messageNo].url} target='_blank' rel='noreferrer noopener'>
+          {words[messageNo].word}
+        </a>
       </div>
       <button onClick={handleChange}>push</button>
     </div>
