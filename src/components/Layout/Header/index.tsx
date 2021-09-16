@@ -14,9 +14,9 @@ export const Header: React.FC = () => {
       </Head>
       <div className=' bg-white opacity-90'>
         <header className='absolute top-0 left-0 right-0 '>
-          <nav className='w-4/5 container mx-auto px-6 md:px-12 py-4'>
+          <nav className=' container mx-auto px-6 md:px-12 py-4'>
             <div className='md:flex justify-center  items-center'>
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-end items-center '>
                 <div className='md:hidden'>
                   <BurgerMenu />
                 </div>
