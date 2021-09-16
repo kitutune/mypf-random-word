@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
+import { useTab } from 'components/Hooks/useTab';
 import { BurgerMenu } from 'components/Layout/Header/BurgerMenu';
 import { HouseIcon } from 'components/Layout/Header/HouseIcon';
 import { Login } from 'components/Login';
 export const Header: React.FC = () => {
+  const { RandomWordOn, MyWordListOn, SubmissionOn } = useTab();
   return (
     <>
       <Head>
@@ -24,11 +26,23 @@ export const Header: React.FC = () => {
                 </div>
               </div>
               <div className='hidden md:flex items-center'>
-                <a className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'>
-                  About us
+                <a
+                  onClick={RandomWordOn}
+                  className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'
+                >
+                  RandomWord
                 </a>
-                <a className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'>
-                  Calendar
+                <a
+                  onClick={MyWordListOn}
+                  className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'
+                >
+                  MyWordList
+                </a>
+                <a
+                  onClick={SubmissionOn}
+                  className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'
+                >
+                  Submission
                 </a>
                 <a className='text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300'>
                   <Login />
