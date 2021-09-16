@@ -13,6 +13,12 @@ export const RandomWord: React.FC = () => {
     getWords();
     return () => {};
   }, []);
+  if (words.length === 0) {
+    return <div>NoWORD!!</div>;
+  }
+  if ((words[0].word = '')) {
+    return <div>NoWORD!!</div>;
+  }
 
   return (
     <div className='text-6xl'>
