@@ -40,7 +40,7 @@ export const Submission = (props: Props) => {
     getWords();
     return () => {};
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [submission]);
   return (
     <>
       <form className='flex flex-wrap gap-3 w-full justify-center p-5 '>
