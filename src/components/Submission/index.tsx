@@ -1,8 +1,7 @@
 import React, { useCallback, useState } from 'react';
-import { useLogin } from 'components/Hooks/useLogin';
 import { supabase } from 'libs/supabase';
-export const Submission: React.FC = () => {
-  const { userId } = useLogin();
+import { Props } from 'pages';
+export const Submission = (props: Props) => {
   const titles = ['word', 'url'];
   const holder = [
     'あなたの好きな作品のセリフや一節を入力してください',
@@ -21,21 +20,20 @@ export const Submission: React.FC = () => {
     [],
   );
   const submission = useCallback(async () => {
-    if (!userId) {
-      return;
+    if (!props.userId) {
+      return console.log('NoUserID!');
     }
     if (form.word.length <= 1 || form.url.length <= 5) {
       return alert('wordは２文字以上、URLも入力してください');
     }
     const { data, error } = await supabase
       .from('wordbox')
-      .insert([{ user_id: userId, word: form.word, url: form.url }]);
+      .insert([{ user_id: props.userId, word: form.word, url: form.url }]);
     setForm(({ ...pre }) => ({
       word: '',
       url: '',
     }));
-  }, [userId, form]);
-
+  }, [props.userId, form]);
   return (
     <div>
       <div className='min-h-screen  flex items-center'>
