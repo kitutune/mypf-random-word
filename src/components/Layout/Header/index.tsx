@@ -18,6 +18,14 @@ export const Header: React.FC = () => {
           <nav className='container mx-auto px-6 md:px-12 py-4'>
             <div className='md:flex justify-between items-center'>
               <div className='flex justify-between items-center'>
+                <a
+                  href='https://github.com/kitutune/mypf'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  className='text-white'
+                >
+                  <HouseIcon />
+                </a>
                 <div className='md:hidden'>
                   <BurgerMenu />
                 </div>
