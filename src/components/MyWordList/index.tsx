@@ -17,7 +17,7 @@ export const MyWordList = (props: Props) => {
     if (!props) {
       return;
     }
-    const { data, error } = await supabase.from('wordbox').select('*').eq('user_id', props.userId);
+    const { data } = await supabase.from('wordbox').select('*').eq('user_id', props.userId);
     if (data) {
       setMyWords(data);
     } else {
@@ -28,7 +28,6 @@ export const MyWordList = (props: Props) => {
   const deleteButton = useCallback(
     // このpropsはwordのid
     async (props: number | string) => {
-      alert('click');
       const { error } = await supabase.from('wordbox').delete().eq('id', props);
       console.log(`errorは${error}`);
       getMyWords(user);
@@ -45,7 +44,9 @@ export const MyWordList = (props: Props) => {
     return () => {};
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+  if (myWords.length === 0) {
+    return <div>まだ何もワードを登録されていません</div>;
+  }
   return (
     <div className=' flex flex-col justify-center '>
       <div>
