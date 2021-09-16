@@ -5,7 +5,6 @@ import { useUser } from 'components/Hooks/useUser';
 
 export const Door: React.FC = (props) => {
   const { session, signInWithGithub, userId } = useLogin();
-
   const { getuser } = useUser();
   const [isShow, setIsShow] = useState<boolean>(false);
   const handleDoor = useCallback(

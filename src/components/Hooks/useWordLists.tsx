@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { supabase } from 'libs/supabase';
 
 export const useWordLists = () => {
@@ -10,12 +10,12 @@ export const useWordLists = () => {
       user_id: '',
     },
   ]);
-  const getWords = async () => {
+  const getWords = useCallback(async () => {
     const { data: wordbox, error } = await supabase.from('wordbox').select('id,url,word');
     if (wordbox) {
       setWords(wordbox);
     }
-  };
+  }, []);
 
   return { getWords, words };
 };
