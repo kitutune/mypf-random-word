@@ -1,6 +1,6 @@
 import { supabase } from 'libs/supabase';
 
-export const useUser = (userId: string) => {
+export const useUser = () => {
   const getuser = async (userId: string) => {
     if (userId === undefined) {
       return;
