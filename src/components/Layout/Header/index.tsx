@@ -2,7 +2,6 @@ import Head from 'next/head';
 import React from 'react';
 import { useTab } from 'components/Hooks/useTab';
 import { BurgerMenu } from 'components/Layout/Header/BurgerMenu';
-import { HouseIcon } from 'components/Layout/Header/HouseIcon';
 import { Login } from 'components/Login';
 export const Header: React.FC = () => {
   const { RandomWordOn, MyWordListOn, SubmissionOn } = useTab();
@@ -16,7 +15,7 @@ export const Header: React.FC = () => {
       <div className=' bg-white opacity-90'>
         <header className='absolute top-0 left-0 right-0 '>
           <nav className='w-4/5 container mx-auto px-6 md:px-12 py-4'>
-            <div className='md:flex justify-between items-center'>
+            <div className='md:flex justify-center  items-center'>
               <div className='flex justify-between items-center'>
                 <div className='md:hidden'>
                   <BurgerMenu />
