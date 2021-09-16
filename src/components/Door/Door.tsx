@@ -21,7 +21,7 @@ export const Door: React.FC = (props) => {
   );
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (userId) {
+    if (session && userId) {
       setIsShow(true);
       getuser(userId);
     } else {
