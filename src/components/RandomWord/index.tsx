@@ -24,9 +24,9 @@ export const RandomWord: React.FC = () => {
     return <div>NoWORD!!</div>;
   }
   return (
-    <div className='text-6xl'>
+    <div className='lg:text-6xl sm:text-2xl'>
       <h1> ランダムワード</h1>
-      <div className='text-6xl'>
+      <div className='lg:text-6xl sm:text-2xl'>
         <a href={words[messageNo].url} target='_blank' rel='noreferrer noopener'>
           {words[messageNo].word}
         </a>
