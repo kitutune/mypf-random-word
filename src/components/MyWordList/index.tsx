@@ -42,7 +42,7 @@ export const MyWordList = () => {
     }
     getMyWords(userId);
     return () => {};
-  }, [userId]);
+  }, [deleteButton]);
 
   return (
     <div className=' '>
