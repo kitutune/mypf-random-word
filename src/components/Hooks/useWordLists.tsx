@@ -11,10 +11,11 @@ export const useWordLists = () => {
     },
   ]);
   const getWords = async () => {
-    const { data: wordbox, error } = await supabase.from('wordbox').select('*');
+    const { data: wordbox, error } = await supabase.from('wordbox').select('id,url,word');
     if (wordbox) {
       setWords(wordbox);
     }
   };
+
   return { getWords, words };
 };
