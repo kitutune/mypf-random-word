@@ -17,7 +17,7 @@ export const RandomWord: React.FC = () => {
     return () => {};
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  if (words.length === 0) {
+  if (words.length <= 1) {
     return <div>NoWORD!!</div>;
   }
   if ((words[0].word = '')) {
