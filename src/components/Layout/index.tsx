@@ -11,7 +11,7 @@ export const Layout: React.FC<Props> = (props) => {
       <Background />
       <Header />
       <div className='text-center'>
-        <div className='flex flex-col justify-center pt-40 pb-40 w-4/5 m-auto h-screen'>
+        <div className='flex flex-col justify-center pt-40 pb-40 w-4/5 m-auto '>
           {props.children}
         </div>
       </div>

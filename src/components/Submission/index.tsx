@@ -36,7 +36,7 @@ export const Submission = (props: Props) => {
   }, [props.userId, form]);
   return (
     <div>
-      <div className='min-h-screen  flex items-center'>
+      <div className=' flex items-center'>
         <div className='container mx-auto max-w-md shadow-md hover:shadow-lg transition duration-300'>
           <div className='py-12 p-10 bg-white rounded-xl'>
             {Object.entries(form).map(([value, defaultValue], i) => (
@@ -49,7 +49,7 @@ export const Submission = (props: Props) => {
                 </label>
                 <input
                   type='text'
-                  className='border text-xs text-black bg-gray-100 py-2 px-4 w-96 outline-none focus:ring-2 focus:ring-indigo-400 rounded'
+                  className='border text-xs text-black bg-gray-100 py-2 px-4 w-3/4 outline-none focus:ring-2 focus:ring-indigo-400 rounded'
                   placeholder={holder[i]}
                   value={defaultValue}
                   onChange={handleChange(value)}
