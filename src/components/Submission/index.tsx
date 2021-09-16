@@ -39,7 +39,7 @@ export const Submission = (props: Props) => {
       <form className='flex flex-wrap gap-3 w-full  p-5 '>
         {Object.entries(form).map(([value, defaultValue], i) => (
           <label className=' uppercase w-full flex flex-col' key={i}>
-            <span className='font-bold mb-3'> {titles[i]}</span>
+            <span className='font-bold text-black mb-3'> {titles[i]}</span>
             <input
               className='rounded-md peer pl-1 pr-2 md:text-base text-2xs text-black py-2 border-2 border-gray-400 placeholder-gray-400'
               type='text'
