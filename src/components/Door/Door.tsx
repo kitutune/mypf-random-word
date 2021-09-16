@@ -6,7 +6,7 @@ import { useUser } from 'components/Hooks/useUser';
 export const Door: React.FC = (props) => {
   const { session, signInWithGithub, userId } = useLogin();
 
-  const { getuser } = useUser(userId);
+  const { getuser } = useUser();
   const [isShow, setIsShow] = useState<boolean>(false);
   const handleDoor = useCallback(
     (e: React.MouseEvent) => {
@@ -21,7 +21,7 @@ export const Door: React.FC = (props) => {
   );
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (session) {
+    if (userId) {
       setIsShow(true);
       getuser(userId);
     } else {
@@ -29,6 +29,7 @@ export const Door: React.FC = (props) => {
     }
     return () => {};
   });
+
   return (
     <>
       <div onClick={handleDoor}>
