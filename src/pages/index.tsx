@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <>
       {userId ? (
-        <main>
+        <main className='flex justify-center'>
           {tab.tab1 ? <RandomWord /> : null}
           {tab.tab2 ? <MyWordList userId={userId} /> : null}
           {tab.tab3 ? <Submission userId={userId} /> : null}
