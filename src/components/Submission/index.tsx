@@ -1,9 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useWordLists } from 'components/Hooks/useWordLists';
 import { supabase } from 'libs/supabase';
 import { Props } from 'pages';
 export const Submission = (props: Props) => {
-  const { getWords, words } = useWordLists();
   const titles = ['word', 'url'];
   const holder = [
     '好きな作品のセリフや一節を入力してください',
@@ -36,15 +34,21 @@ export const Submission = (props: Props) => {
       url: '',
     }));
   }, [props.userId, form]);
+
   useEffect(() => {
-    getWords();
+    if (!props.getWords) {
+      return;
+    }
+    props.getWords();
     return () => {};
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [submission]);
   return (
     <>
       <form className='flex flex-wrap gap-3 w-full justify-center p-5 max-w-4xl'>
-        <p className='font-bold text-black mb-3'>{`現在登録されているワードは${words.length}個です`}</p>
+        {props.words ? (
+          <p className='font-bold text-black mb-3'>{`現在登録されているワードは${props.words.length}個です`}</p>
+        ) : null}
         {Object.entries(form).map(([value, defaultValue], i) => (
           <label className=' uppercase w-full flex flex-col' key={i}>
             <span className='font-bold text-black mb-3'> {titles[i]}</span>
