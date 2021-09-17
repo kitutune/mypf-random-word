@@ -1,6 +1,6 @@
 # 現在　更新中
 
-## Getting Started
+## locakhostにログイン情報を遷移しているため利用できません
 
 参考リンク
 
