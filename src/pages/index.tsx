@@ -19,8 +19,6 @@ const Home: NextPage = () => {
   const { getWords, words } = useWordLists();
 
   useEffect(() => {
-    console.log('useEfect');
-
     getWords();
     return () => {};
     // eslint-disable-next-line react-hooks/exhaustive-deps

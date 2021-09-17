@@ -4,7 +4,7 @@ import { useLogin } from 'components/Hooks/useLogin';
 import { useUser } from 'components/Hooks/useUser';
 
 export const Door: React.FC = (props) => {
-  const { session, signInWithGithub, userId } = useLogin();
+  const { session, signInWithGoogle, userId } = useLogin();
   const { getuser } = useUser();
   const [isShow, setIsShow] = useState<boolean>(false);
   const handleDoor = useCallback(
@@ -12,7 +12,7 @@ export const Door: React.FC = (props) => {
       if (session) {
         return;
       }
-      signInWithGithub();
+      signInWithGoogle();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [isShow],

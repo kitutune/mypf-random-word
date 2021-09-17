@@ -1,12 +1,12 @@
 import { useLogin } from 'components/Hooks/useLogin';
 export const Login = () => {
-  const { session, signInWithGithub, signOut } = useLogin();
+  const { session, signInWithGoogle, signOut } = useLogin();
   return (
     <>
       {session ? (
         <button onClick={() => signOut()}>SIGNOUT</button>
       ) : (
-        <button onClick={() => signInWithGithub()}>LOGIN</button>
+        <button onClick={() => signInWithGoogle()}>LOGIN</button>
       )}
     </>
   );
