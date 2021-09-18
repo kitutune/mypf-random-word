@@ -24,7 +24,7 @@
 
 <img width="400" alt="スクリーンショット 2021-09-17 16 10 26" src="https://user-images.githubusercontent.com/79749395/133740504-429a261e-d37a-4e21-8375-0fd4fb3e5e04.png">
 
-## 仕様技術
+## 使様技術
 
 - Next.js
 - vercel
