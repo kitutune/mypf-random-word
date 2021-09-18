@@ -14,10 +14,6 @@ export const useUser = () => {
     if (error) {
       return console.log(`error！userの読み込みに失敗しました！内容は${error}`);
     }
-    // 後で消す
-    if (profiles) {
-      console.log('既に登録されているuserです');
-    }
   };
 
   const registerUser = async (userId: string) => {
