@@ -25,7 +25,7 @@ export const RandomWord = (props: Props) => {
     return <div>NoWORD!!</div>;
   }
   return (
-    <div className='w-10/12 lg:text-6xl sm:text-2xl'>
+    <div className='w-10/12 lg:text-6xl sm:text-2xl text-white'>
       <h1> ランダムワード</h1>
       <div className='lg:text-6xl sm:text-2xl text-white'>
         <a href={props.words[messageNo].url} target='_blank' rel='noreferrer noopener'>
