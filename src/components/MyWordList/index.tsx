@@ -45,7 +45,7 @@ export const MyWordList = (props: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (myWords.length === 0) {
-    return <div>まだ何もワードを登録されていません</div>;
+    return <div className='text-black'>まだ何もワードを登録されていません</div>;
   }
   return (
     <div className=' flex flex-col justify-center '>
