@@ -29,12 +29,6 @@ http://mypf-random-word.vercel.app/
 
 ここでは誰かが興味のあることや好きな言葉、フレーズなどがボタンを押すごとに表示されるので気になったワードから、そのワードのリンクに飛んで新しい発見をする場として作成いたしました。
 
-
-## :blue_book:Requirement
-- supabase 1.22.5
-- daisyui 1.14.0
-- next 11.1.2
-- react　17.0.2
    
 
 ## 💬 Usage
