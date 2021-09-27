@@ -18,8 +18,8 @@
 
 
 
-## 🌐 AppURL
-http://mypf-random-word.vercel.app/
+
+
 
 ## :question:Description
 
@@ -32,10 +32,8 @@ http://mypf-random-word.vercel.app/
    
 
 ## 💬 Usage
-~~~
-$ git clone https://github.com/kitutune/mypf-random-word.git
-~~~
 
+http://mypf-random-word.vercel.app/
 
 ## 📦package
 
