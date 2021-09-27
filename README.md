@@ -12,19 +12,19 @@
 
 <img width="400" alt="スクリーンショット 2021-09-17 16 11 02" src="https://user-images.githubusercontent.com/79749395/133740267-bd491f7d-bf39-454e-8520-43ac6e71d3de.png">
 
-## PUSH を押すと誰かが登録したワードが表示されるので、気になったワードがあればワードを押すとそのワードに登録されたリンクに飛びます ↓
+## PUSH を押すと誰かが登録したワードが表示されるので、気になったワードがあれば、そのワードをクリックするとリンク先に移動します ↓
 
 <img width="400" alt="スクリーンショット 2021-09-17 16 07 38" src="https://user-images.githubusercontent.com/79749395/133740491-62d062ee-0617-4d62-b7ba-0afbb5f3e54e.png">
 
-## WORD に表示させたい文章や文字を、URL にはそこから飛ぶリンクを入力して ENTER を押すと登録されます ↓
+## WORD に表示させたい文章や文字を、URLにはリンクを入力し登録 ↓
 
 <img width="400" alt="スクリーンショット 2021-09-17 16 09 15" src="https://user-images.githubusercontent.com/79749395/133740496-5465290c-d795-4cae-88a3-4e5109c88ce0.png">
 
-## MYWORDLIST で自分が登録したワードリストを確認できるのでそこで削除することが可能です ↓
+## MYWORDLIST で自分が登録したワードリストを確認できるので、そこで削除することが可能です ↓
 
 <img width="400" alt="スクリーンショット 2021-09-17 16 10 26" src="https://user-images.githubusercontent.com/79749395/133740504-429a261e-d37a-4e21-8375-0fd4fb3e5e04.png">
 
-## 使様技術
+## 仕様技術
 
 - Next.js
 - vercel
