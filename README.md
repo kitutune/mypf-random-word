@@ -1,4 +1,7 @@
-<div align="center"><img  width="400" alt="スクリーンショット 2021-09-17 16 07 38" src="https://user-images.githubusercontent.com/79749395/133740491-62d062ee-0617-4d62-b7ba-0afbb5f3e54e.png">
+<div align="center">
+
+  ![5939b576-d5bf-4e15-a217-ce36d9e0deab](https://user-images.githubusercontent.com/79749395/134896482-d6c73d0d-2719-472e-92c8-95c8625688bb.gif)
+
 
 <h1 align="center">:name_badge:random-word-App</h1>
 <p align="center">
@@ -27,7 +30,7 @@ http://mypf-random-word.vercel.app/
 ここでは誰かが興味のあることや好きな言葉、フレーズなどがボタンを押すごとに表示されるので気になったワードから、そのワードのリンクに飛んで新しい発見をする場として作成いたしました。
 
 
-## Requirement
+## :blue_book:Requirement
 - supabase 1.22.5
 - daisyui 1.14.0
 - next 11.1.2
