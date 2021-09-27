@@ -35,7 +35,7 @@
 
 http://mypf-random-word.vercel.app/
 
-## 📦package
+## 📦Package
 
 - Next.js
 - vercel
