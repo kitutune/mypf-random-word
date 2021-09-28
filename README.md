@@ -31,7 +31,7 @@
 
    
 
-## 💬 Usage
+## :video_game: Play here
 
 http://mypf-random-word.vercel.app/
 
