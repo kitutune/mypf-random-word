@@ -49,6 +49,7 @@ http://mypf-random-word.vercel.app/
 
 とにかくシンプルで初見でも使いやすい SPA（シングルページアプリケーション）となるように意識して作成しました。
 
-[参考リンク](https://gist.github.com/kitutune/6ab0549bdc63804dd117a0fa2a8d8f88#file-mypf-random-word-link-md)
+## :link:Reference Links
+[参考にしたサイトを別途記載](https://gist.github.com/kitutune/6ab0549bdc63804dd117a0fa2a8d8f88#file-mypf-random-word-link-md)
 
   
