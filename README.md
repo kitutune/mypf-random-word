@@ -41,7 +41,7 @@ http://mypf-random-word.vercel.app/
 - vercel
 - TypeScript
 - Tailwindcss
-- Supabase
+- Supabase  [Postgres version13.3](https://supabase.io/blog/2021/07/26/supabase-postgres-13)
 - SWR
 - daisyUI
 
