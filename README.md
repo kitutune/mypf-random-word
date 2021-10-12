@@ -1,3 +1,5 @@
+#追記　一週間起動していないとsupabaseは無効化される仕様のようです（フリープラン）　
+
 <div align="center">
 
   ![5939b576-d5bf-4e15-a217-ce36d9e0deab](https://user-images.githubusercontent.com/79749395/134896482-d6c73d0d-2719-472e-92c8-95c8625688bb.gif)
