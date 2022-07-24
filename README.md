@@ -1,4 +1,5 @@
-## 追記　一週間起動していないとsupabaseは無効化される仕様のようです（フリープラン）　
+## 追記　supabaseフリープランのDB枠が減ったので削除しました
+## 追記　一週間起動していないとsupabaseは無効化される仕様のようです（supabaseフリープラン）　
 ## 追記　[こちらでReadMeを作るまでの記事を投稿しています](https://qiita.com/kitutune/items/4ad45f23d9753395692a)
 
 <div align="center">
