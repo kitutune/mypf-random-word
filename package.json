@@ -11,7 +11,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.22.5",
+    "@supabase/supabase-js": "1.35.7",
     "@supabase/ui": "^0.34.4",
     "classcat": "^5.0.3",
     "daisyui": "^1.14.0",
