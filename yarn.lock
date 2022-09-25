@@ -247,7 +247,7 @@
   dependencies:
     cross-fetch "^3.1.0"
 
-"@supabase/supabase-js@^1.22.5":
+"@supabase/supabase-js@1.22.5":
   version "1.22.5"
   resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-1.22.5.tgz#ef0faa1d219a3202c11ee561c934a452779eb68c"
   integrity sha512-NRhCZTb+oOQdPekwamLM5AKYC8S8bXxBZzI9fkYApS8qUKO1THZ0BL0PZxRIk9Zw+vz9FtoCgRV/ppEaogWsOQ==
@@ -257,7 +257,7 @@
     "@supabase/realtime-js" "^1.1.3"
     "@supabase/storage-js" "^1.4.0"
 
-"@supabase/ui@^0.34.4":
+"@supabase/ui@0.34.4":
   version "0.34.4"
   resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.34.4.tgz#4c1db38906dc331c2dcaacdcd24f958752871ae8"
   integrity sha512-gkTwrikChKnLoO6ZCZs/48pV07DiIjMdnn5shztNJ6mg3rwzIEMmHmzmE1QwcXNSZAZBSObaK52xblhp7OYCjg==
@@ -531,7 +531,7 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-autoprefixer@^10.3.4:
+autoprefixer@10.3.4:
   version "10.3.4"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.3.4.tgz#29efe5d19f51c281953178ddb5b84c5f1ca24c86"
   integrity sha512-EKjKDXOq7ug+jagLzmnoTRpTT0q1KVzEJqrJd0hCBa7FiG0WbFOBCcJCy2QkW1OckpO3qgttA1aWjVbeIPAecw==
@@ -816,7 +816,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-classcat@^5.0.3:
+classcat@5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/classcat/-/classcat-5.0.3.tgz#38eaa0ec6eb1b10faf101bbcef2afb319c23c17b"
   integrity sha512-6dK2ke4VEJZOFx2ZfdDAl5OhEL8lvkl6EHF92IfRePfHxQTqir5NlcNVUv+2idjDqCX2NDc8m8YSAI5NI975ZQ==
@@ -1035,7 +1035,7 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-daisyui@^1.14.0:
+daisyui@1.14.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.14.0.tgz#1d63658c0dd87f9795d333e7068cedbb0b0a52a6"
   integrity sha512-50ccXdJMi0TS7raItKfUOJppPRvluOUCO4m6i7QPOVOdDZVP6awjqUoGmLzqFepO6b6QpVotswDvaXIKSZ/2aw==
@@ -1313,7 +1313,7 @@ eslint-config-next@11.1.2:
     eslint-plugin-react "^7.23.1"
     eslint-plugin-react-hooks "^4.2.0"
 
-eslint-config-prettier@^8.3.0:
+eslint-config-prettier@8.3.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
@@ -2869,7 +2869,7 @@ postcss@8.2.15:
     nanoid "^3.1.23"
     source-map "^0.6.1"
 
-postcss@^8.1.6, postcss@^8.2.1, postcss@^8.3.6:
+postcss@8.3.6, postcss@^8.1.6, postcss@^8.2.1:
   version "8.3.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.6.tgz#2730dd76a97969f37f53b9a6096197be311cc4ea"
   integrity sha512-wG1cc/JhRgdqB6WHEuyLTedf3KIRuD0hG6ldkFEZNCjRxiC+3i6kkWUUbiJQayP28iwG35cEmAbe98585BYV0A==
@@ -2883,7 +2883,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^2.4.0:
+prettier@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.0.tgz#85bdfe0f70c3e777cf13a4ffff39713ca6f64cba"
   integrity sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==
@@ -3020,7 +3020,7 @@ react-dom@17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-icons@^4.2.0:
+react-icons@4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
   integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
@@ -3529,7 +3529,7 @@ supports-color@^8.0.0:
   dependencies:
     has-flag "^4.0.0"
 
-swr@^1.0.1:
+swr@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/swr/-/swr-1.0.1.tgz#15f62846b87ee000e52fa07812bb65eb62d79483"
   integrity sha512-EPQAxSjoD4IaM49rpRHK0q+/NzcwoT8c0/Ylu/u3/6mFj/CWnQVjNJ0MV2Iuw/U+EJSd2TX5czdAwKPYZIG0YA==
@@ -3548,7 +3548,7 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tailwindcss@^2.2.15:
+tailwindcss@2.2.15:
   version "2.2.15"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.15.tgz#8bee3ebe68b988c050508ce20633f35b040dd9fe"
   integrity sha512-WgV41xTMbnSoTNMNnJvShQZ+8GmY86DmXTrCgnsveNZJdlybfwCItV8kAqjYmU49YiFr+ofzmT1JlAKajBZboQ==
